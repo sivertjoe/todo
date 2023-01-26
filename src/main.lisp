@@ -45,7 +45,7 @@
   (draw-box frame)
   (let* ((title (format nil "Series ~a" id))
         (offset   (- (/ w 2) (/ (length title) 2))))
-    (put-text frame 0 offset title)
+    (put-text frame 0 2 title)
 
     (loop 
       for item in (nth id *lists*)
